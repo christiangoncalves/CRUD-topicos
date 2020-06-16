@@ -1,0 +1,258 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+
+}
+
+.input-table {
+    background-color: rgba(78, 50, 50, 0);
+    color: #fff;
+    margin: 0px !important;
+    padding: 3px !important;
+    border: 1px solid transparent !important;
+}
+
+#table1 {
+    background-color: rgba(65, 65, 65, 0.5);
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 400px;
+}
+
+#table2 {
+    background-color: rgba(65, 65, 65, 0.5);
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 463px;
+}
+
+#inserir {
+    background-color: rgba(65, 65, 65, 0.5);
+    margin: auto;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 60px;
+    padding: 15px 10px;
+}
+
+#pesquisar {
+    background-color: rgba(65, 65, 65, 0.5);
+    margin: auto;
+    margin-bottom: 22px;
+    margin-top: 25px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 10px #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 60px;
+    padding: 15px 10px;
+}
+
+.table {
+    border-radius: 5px;
+}
+
+.wrapper {
+    background-color: rgba(65, 65, 65, 0.5);
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 430px;
+}
+
+.wrapper:before {
+    background-image: url("assets/images/bg.jpg") ;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-color: cover;
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+
+}
+
+.wrapper .header-text {
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper input {
+    margin: 10px 0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+.wrapper input[type=checkbox] {
+    display: none;
+}
+
+.wrapper label {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+
+}
+
+.wrapper label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ddd;
+}
+
+.wrapper input[type=checkbox]:checked+label:before {
+    content: '\2713';
+    font-size: 20px;
+    color: #262626;
+    text-align: center;
+    line-height: 20px;
+}
+
+.wrapper span {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.wrapper button {
+    background-color: #fb5a2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 380px;
+    overflow: auto;
+
+}
+
+#pesquisar_id {
+    width: 50px;
+    height: 30px;
+    margin-left: 5px;
+    margin: 0px;
+}
+
+#pesquisar_nome {
+    width: 380px;
+    height: 30px;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    margin: 0px;
+}
+
+#adicionar_nome {
+    width: 430px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin: 0px;
+}
+
+.bi{
+    width: 1.3em;
+    height: 1.3em; 
+}
+
+.bi:hover {
+    cursor: pointer;
+    filter: brightness(135%);
+}
+
+.bi-upload {
+    padding-left: 10px;
+    width: 37px;
+    height: 37px;
+}
+
+.bi-search {
+    filter: brightness(125%);
+    border-radius: 5px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+}
+
+#cabecalho {
+    display: "" !important;
+}
+
+.input-ativo {
+    border: 1px solid #ddd !important;
+}
+
+.simplebar-scrollbar::before {
+    background-color: rgb(20, 20, 20);
+}
